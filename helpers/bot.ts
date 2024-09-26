@@ -6,7 +6,7 @@ const bot = new Bot(process.env.TELEGRAM_BOT_API_KEY!);
 try {
   bot.command("/start", async (ctx) => {
     const sender = ctx.from;
-    console.log({ sender, senderId: sender?.id });
+    console.log({ sender, senderId: sender?.id }); //log response
   });
 } catch (error) {
   console.log({ error });
